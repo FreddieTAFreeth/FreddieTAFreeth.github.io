@@ -3,27 +3,28 @@
   <head>
     <meta charset = "UTF-8" name = "viewport" content = "width = device-width, initial-scale = 1.0">
     
+    <!-- Use LaTeX Computer Modern Fonts https://stackoverflow.com/a/33003484 -->
+    <link rel = "stylesheet" type = "text/css" href = "https://cdn.jsdelivr.net/gh/aaaakshat/cm-web-fonts@latest/fonts.css">
+    
     <!-- Customising the website tinting/color of address bar on modern browsers. -->
     <!-- https://www.geekinsta.com/how-to-change-the-color-of-address-bar-to-match-the-color-of-your-site/ -->
     <meta name="theme-color" content="#000000"> <!-- Chrome, Firefox OS, and Opera -->
     <meta name="msapplication-navbutton-color" content="#000000"> <!-- Windows Phone -->
-    <meta name="apple-mobile-web-app-status-bar-style" content="#000000"> <!-- iOS Safari -->
-    
-    <!-- Use LaTeX Computer Modern Fonts https://stackoverflow.com/a/33003484 -->
-    <link rel = "stylesheet" type = "text/css" href = "https://cdn.jsdelivr.net/gh/aaaakshat/cm-web-fonts@latest/fonts.css">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000000"> <!-- iOS Safari --> 
 
     <title>FTAF's Personal Webpage</title>
     <style>
-      html {height: 100%}
+      html {height: 100%;}
       body {
         max-width: 500px;
         margin: 40px auto;
         padding: 0 10px;
         font-family: "Computer Modern Serif", serif;
-        color: rgba(255, 255, 255, 0.7);
-        background: linear-gradient(217deg, rgba(40, 0, 0, 1), rgba(40, 0,  0, 0) 100%),
-                    linear-gradient(127deg, rgba(0, 40, 0, 1), rgba(0, 40,  0, 0) 100%),
-                    linear-gradient(336deg, rgba(0,  0, 40,1), rgba(0,  0, 40, 0) 100%);
+        color: white;
+        background-color: #000000; /* Sets website toolbar tinting on iOS, Android, Firefox, etc. to black*/
+        background: linear-gradient(217deg, rgba(96, 0,  0, 1), rgba(0, 0,  0, 0) 100%),
+                    linear-gradient(127deg, rgba(0, 96,  0, 1), rgba(0, 0,  0, 0) 100%),
+                    linear-gradient(336deg, rgba(0,  0, 96, 1), rgba(0, 0,  0, 0) 100%);
         min-height: 100%;
         line-height: 1.5;
         text-align: justify;
@@ -31,34 +32,34 @@
       }
       h1 {text-align: center;}
       a {
-        transition: 0.3s; /* Get the animation to happen when hovering off */
+        transition: 0.618s; /* Get the animation to happen when hovering off */
         font-style: italic;
       }
-      a:link {color: rgba(255, 255, 255, 0.7)}
-      a:visited {color: rgba(255, 255, 255, 0.7)}
+      a:link {color: white}
+      a:visited {color: white}
       a:hover {
-        color: rgba(0, 0, 0, 1);
-        background-color: rgba(255, 255, 255, 1);
-        transition: 0.3s;
+        color: black;
+        background-color: white;
+        transition: 0.618s;
         padding: 5px;
         border-radius: 10px;
-        -moz-box-shadow: 0px 0px 200px 50px rgba(255, 255, 255, 1);
-        -webkit-box-shadow: 0px 0px 200px 50px rgba(255, 255, 255, 1);
-        box-shadow: 0px 0px 200px 50px rgba(255, 255, 255, 1);
+        -moz-box-shadow: 0px 0px 200px 50px white;
+        -webkit-box-shadow: 0px 0px 200px 50px white;
+        box-shadow: 0px 0px 200px 50px white;
         text-decoration: none;
-        font-weight: 500;
         font-style: normal;
       }
+      hr {width: 25%;}
     </style>
   </head>
   <body>
     <h1>Fred T. A. Freeth</h1>
+    <hr />
     <p>Welcome to my personal website.</p>
     <ul>
       <li>Use <a href = "https://uk.linkedin.com/in/FreddieTAFreeth">my LinkedIn</a> to get in contact,</li>
       <li>See <a href = "#">my publications</a> to see my research,</li>
       <li>View <a href = "https://www.github.com/FreddieTAFreeth">my GitHub</a> to see my projects.</li>
     </ul>
-    <hr />
   </body>
 </html>
