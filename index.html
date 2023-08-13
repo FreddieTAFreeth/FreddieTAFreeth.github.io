@@ -10,7 +10,7 @@
     <!-- https://www.geekinsta.com/how-to-change-the-color-of-address-bar-to-match-the-color-of-your-site/ -->
     <meta name="theme-color" content="#000000"> <!-- Chrome, Firefox OS, and Opera -->
     <meta name="msapplication-navbutton-color" content="#000000"> <!-- Windows Phone -->
-    <meta name="apple-mobile-web-app-status-bar-style" content="#000000"> <!-- iOS Safari --> 
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> <!-- iOS Safari --> 
 
     <title>FTAF's Personal Webpage</title>
     <style>
@@ -22,9 +22,10 @@
         font-family: "Computer Modern Serif", serif;
         color: white;
         background-color: #000000; /* Sets website toolbar tinting on iOS, Android, Firefox, etc. to black*/
-        background: linear-gradient(217deg, rgba(96, 0,  0, 1), rgba(0, 0,  0, 0) 100%),
-                    linear-gradient(127deg, rgba(0, 96,  0, 1), rgba(0, 0,  0, 0) 100%),
-                    linear-gradient(336deg, rgba(0,  0, 96, 1), rgba(0, 0,  0, 0) 100%);
+        background: linear-gradient(180deg, rgba(0,   0,  0, 1), rgba(0, 0,  0, 0) 100%),
+                    linear-gradient(120deg, rgba(64, 0,  0, 1), rgba(0, 0,  0, 0) 100%),
+                    linear-gradient(240deg, rgba(0, 64,  0, 1), rgba(0, 0,  0, 0) 100%),
+                    linear-gradient(360deg, rgba(0,  0, 64, 1), rgba(0, 0,  0, 0) 100%);
         min-height: 100%;
         line-height: 1.5;
         text-align: justify;
@@ -32,7 +33,7 @@
       }
       h1 {text-align: center;}
       a {
-        transition: 0.618s; /* Get the animation to happen when hovering off */
+        transition: 0.3s; /* Get the animation to happen when hovering off */
         font-style: italic;
       }
       a:link {color: white}
@@ -40,7 +41,7 @@
       a:hover {
         color: black;
         background-color: white;
-        transition: 0.618s;
+        transition: 0.3s;
         padding: 5px;
         border-radius: 10px;
         -moz-box-shadow: 0px 0px 200px 50px white;
