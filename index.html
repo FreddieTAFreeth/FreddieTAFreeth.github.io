@@ -59,6 +59,11 @@
         font-style: normal;
       }
       hr {width: 25%;}
+      html::after {
+        content: "";
+        display: block;
+        height: calc(env(safe-area-inset-bottom) + 80px);
+      }
     </style>
   </head>
   <body>
