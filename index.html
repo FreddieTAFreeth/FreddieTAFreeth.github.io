@@ -1,71 +1,84 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="theme-color" content="transparent">
+    <meta name="apple-mobile-web-app-status-bar-style" content="light-content">
+    <meta name="apple-mobile-web-app-title" content="FTAF">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#000000">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="transparent">
 
-    <!-- Use LaTeX Computer Modern Fonts https://stackoverflow.com/a/33003484 -->
-    <link rel = "stylesheet" type = "text/css" href = "https://cdn.jsdelivr.net/gh/aaaakshat/cm-web-fonts@latest/fonts.css">
+    <!-- Use LaTeX Computer Modern Fonts -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/aaaakshat/cm-web-fonts@latest/fonts.css">
     
-    <!-- PyScript framework for running Python in the browser https://pyscript.net/; stuff coming soon :) -->
+    <!-- PyScript (kept if you plan to use it later) -->
     <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
     <script defer src="https://pyscript.net/latest/pyscript.js"></script>
 
     <title>FTAF's Personal Webpage</title>
+
     <style>
-      html {
-        min-height: 100%;
-        color-scheme: dark;
-        background:
+      /* Full height + draw under system bars */
+      html, body {
+        height: 100%;
+        height: 100dvh;           /* dynamic viewport height — critical for mobile */
+        margin: 0;
+        padding: 0;
+        background: 
           linear-gradient(180deg, rgba(0,0,0,1), rgba(0,0,0,0) 100%),
           linear-gradient(120deg, rgba(64,0,0,1), rgba(0,0,0,0) 100%),
           linear-gradient(240deg, rgba(0,64,0,1), rgba(0,0,0,0) 100%),
           linear-gradient(360deg, rgba(0,0,128,1), rgba(0,0,0,0) 100%);
         background-repeat: no-repeat;
         background-attachment: fixed;
+        color-scheme: dark;
       }
+
       body {
         max-width: 500px;
-        margin: 40px auto;
+        margin: 0 auto;
         padding:
-          calc(env(safe-area-inset-top) + 0px) 10px
-          calc(env(safe-area-inset-bottom) + 0px);
+          max(20px, env(safe-area-inset-top)) 15px
+          max(20px, env(safe-area-inset-bottom)) 15px;
         font-family: "Computer Modern Serif", serif;
         color: white;
         background: transparent;
         line-height: 1.5;
         text-align: justify;
         font-size: 1.23em;
+        box-sizing: border-box;
+        min-height: 100dvh;
       }
-      h1 {text-align: center;}
+
+      h1 { text-align: center; margin-top: 0; }
+      hr { width: 25%; }
+
       a {
         transition: 0.3s;
         font-style: italic;
       }
-      a:link, a:visited {color: white}
+      a:link, a:visited { color: white; }
       a:hover {
         color: black;
         background-color: white;
-        transition: 0.3s;
         padding: 5px;
         border-radius: 10px;
-        -moz-box-shadow: 0px 0px 200px 50px white;
-        -webkit-box-shadow: 0px 0px 200px 50px white;
         box-shadow: 0px 0px 200px 50px white;
         text-decoration: none;
         font-style: normal;
       }
-      hr {width: 25%;}
-      html::after {
+
+      /* Optional: extra space at the bottom so content isn’t hidden behind the home indicator */
+      body::after {
         content: "";
         display: block;
-        height: calc(env(safe-area-inset-bottom) + 80px);
+        height: env(safe-area-inset-bottom);
       }
     </style>
   </head>
+
   <body>
     <h1>Fred T. A. Freeth</h1>
     <hr />
