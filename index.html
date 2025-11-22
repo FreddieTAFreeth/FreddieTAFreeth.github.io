@@ -14,7 +14,8 @@
     <title>FTAF's Personal Webpage</title>
     <style>
       html {
-        height: calc(100vh + 2*env(safe-area-inset-bottom));
+        min-height: -webkit-fill-availiable;
+        height: 100%;
         margin: 0;
         background:
           linear-gradient(180deg, rgba(0,0,0,1), rgba(0,0,0,0) 100%),
@@ -29,9 +30,9 @@
         position: relative;
         inset: 0;
         min-height: -webkit-fill-available;
-        overflow-y: auto;
+        height: 100%;
         -webkit-overflow-scrolling: touch;
-        margin: 0 auto;
+        margin: 0;
         padding: max(20px, env(safe-area-inset-top)) 15px max(20px, env(safe-area-inset-bottom)) 15px;
         max-width: 500px;
         box-sizing: border-box;
